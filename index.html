@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>DrivenEats!</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+
+    </head>
+
+    <body>
+        <div class="app-content" onclick="botaoFinalizar(this)">
+            <div class="menu">
+                <div class="menu-top">
+                    <h1>DrivenEats</h1>
+                    <h3>Sua comida em 6 minutos</h3>
+                </div>
+                <div class="menu-bot">
+                   <div class="botao" onclick="finalizarPedido(this)">
+                        <p>Selecione os 3 itens<br>
+                        para fechar o pedido</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <h2>Primeiro, seu prato</h2>
+                <div class="pratos">
+                    <div class="opcao" onclick="selecionaComida(this)">
+                        <img src="./img/pratos/sobrecoxa.png"/>
+                        <h3>Sobrecoxa</h3>
+                        <h5>Um pouco de enfeite</h5>
+                        <h5>Um pouco de batata</h5>
+                        <div class="preco">
+                            <h4>14,90</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaComida(this)">
+                        <img src="./img/pratos/comida.png"/>
+                        <h3>Frango Grelhado</h3>
+                        <h5>Feijãozin</h5>
+                        <h5>Farofinha</h5>
+                          <div class="preco">
+                            <h4>13,50</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaComida(this)">
+                        <img src="./img/pratos/isca_de_peixe.png"/>
+                        <h3>Peixin</h3>
+                        <h5>Saladinha</h5>
+                        <h5>Fritas</h5>
+                          <div class="preco">
+                            <h4>15,60</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaComida(this)">
+                        <img src="./img/pratos/Kebab.png"/>
+                        <h3>Kehbab</h3>
+                        <h5>Saladinha</h5>
+                        <h5>Fritas</h5>
+                          <div class="preco">
+                            <h4>12,60</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaComida(this)">
+                        <img src="./img/pratos/batata.png"/>
+                        <h3>Batata Maluca</h3>
+                        <h5>Ja disse batata?</h5>
+                        <h5>E disse maluca?</h5>
+                          <div class="preco">
+                            <h4>10,50</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <h2>Agora, sua bebida</h2>
+                <div class="bebidas">
+                    <div class="opcao" onclick="selecionaBebida(this)">
+                        <img src="./img/bebidas/Refrigerante-PNG.png"/>
+                        <h3>Refri gelado</h3>
+                        <h5>Lata 300ml</h5>
+                          <div class="preco">
+                            <h4>4,90</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaBebida(this)">
+                        <img src="./img/bebidas/suco-copo.png"/>
+                        <h3>Suco</h3>
+                        <h5>Copo 500ml</h5>
+                          <div class="preco">
+                            <h4>6,70</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaBebida(this)">
+                        <img src="./img/bebidas/cerva.png"/>
+                        <h3>Breja</h3>
+                        <h5>Long Neck 600ml</h5>
+                          <div class="preco">
+                            <h4>7,90</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaBebida(this)">
+                        <img src="./img/bebidas/suco-jarra.png"/>
+                        <h3>Suco</h3>
+                        <h5>Jarra 1,5lts</h5>
+                        <div class="preco">
+                            <h4>9,90</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaBebida(this)">
+                        <img src="./img/bebidas/refri2lts.png"/>
+                        <h3>Refri Pet</h3>
+                        <h5>2lts</h5>
+                          <div class="preco">
+                            <h4>11,90</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Por fim, sua sobremesa</h2>
+                <div class="sobremesas">
+                    <div class="opcao" onclick="selecionaSobremesa(this)">
+                        <img src="./img/sobremesas/Acai-Bowls-FineFruitsClub-500x500px.png"/>
+                        <h3>Açaí Bombado</h3>
+                        <h5>Tigela 500ml</h5>
+                          <div class="preco">
+                            <h4>7,90</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaSobremesa(this)">
+                        <img src="./img/sobremesas/tiramisu.png"/>
+                        <h3>Tiramisu</h3>
+                        <h5>Uma delícia</h5>
+                          <div class="preco">
+                            <h4>6,00</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaSobremesa(this)">
+                        <img src="./img/sobremesas/pave.jpg">
+                        <h3>Pavê de Morango</h3>
+                        <h5>Pavê ou pacumê?</h5>                        
+                          <div class="preco">
+                            <h4>8,50</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="opcao" onclick="selecionaSobremesa(this)">
+                        <img src="./img/sobremesas/cafe.jpg"/>
+                        <h3>Mousse de café</h3>
+                        <h5>Se apaixone</h5>
+                          <div class="preco">
+                            <h4>7,40</h4>
+                            <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        </html>
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
